@@ -1,0 +1,13 @@
+[build]
+command="npm run build"
+publish="dist"
+[functions]
+directory="netlify/functions"
+[[redirects]]
+from="/api/agent"
+to="/.netlify/functions/agent"
+status=200
+[[redirects]]
+from="/*"
+to="/index.html"
+status=200
